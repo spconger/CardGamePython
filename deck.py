@@ -45,31 +45,3 @@ class Deck:
 
     def setDeck(self, cards):
         self.cards = cards
-        
-'''
-
-    def shuffleDeck(self):
-        #suffle the deck
-        randDeck=self.getDeck()
-        random.shuffle(randDeck)
-        return randDeck
-
-    def deal(self,number):
-        #get a shuffled deck
-        self.newDeck=self.shuffleDeck()
-        #create an empty list for the hand
-        self.hand=[]
-        #if there are more cards in the deck
-        #than the number requestd
-        if number < len(self.newDeck):
-            #get that number of cards
-            #and put them in the hand list
-            for i in range(number):
-                self.hand.append(self.newDeck[i])
-            #remove those cards from the
-                #suffled deck
-            for c in self.hand:
-                self.newDeck.remove(c)
-        #return the hand      
-        return self.hand
-'''

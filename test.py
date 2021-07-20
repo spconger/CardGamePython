@@ -38,3 +38,9 @@ class testDeck(unittest.TestCase):
         cards = self.deck.getDeck()
         card=cards[51]
         self.assertEqual(str(card),'the king of spades')
+
+    '''
+    In terms of testing, the abstract class can't be
+    initiated, so, I will test it through its child
+    class
+    '''
